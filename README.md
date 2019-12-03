@@ -16,13 +16,13 @@ I will follow the following steps of the data science process to finish this pro
 From the dataset, we know that people produce various events, including receiving offers, opening offers, and making purchases. There are no explicit products to track, only the amounts of each transaction or offer are recorded. And there are three types of offers that can be sent. Based on the procedure I mentioned above, I will conduct the analysis, build the machine learning model and find out the customer buying behaviors and how much are they going to spend on based on the offer type. 
 
 ### Libraries
-pandas
-numpy
-json
-datetime
-matplotlib
-seaborn
-sklearn
+- pandas
+- numpy
+- json
+- datetime
+- matplotlib
+- seaborn
+- sklearn
 
 ### Files in the Repository
 - In Data folder: there are 3 dataset, for details, please check below. Pease note that transcript file is too large to upload into github.
