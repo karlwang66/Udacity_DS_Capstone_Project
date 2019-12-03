@@ -61,6 +61,11 @@ Here is the schema and explanation of each variable in the files:
 - time (int) - time in hours since start of test. The data begins at time t=0
 - value - (dict of strings) - either an offer id or transaction amount depending on the record
 
+### Result:
+- Original model: accuracy 92.9%, F-score of 0.9305.
+- New model (after refinement): accuracy 94.4%, F-score of 0.9391.
+The new model result is slightly better than the original model.
+
 ### Acknowledgements
 - Udacity provide the data, platform.
 - Project mentor Mrudula give me the tremendous help.
