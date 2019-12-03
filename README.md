@@ -1,30 +1,32 @@
 # Udacity_DS_Capstone_Project - Starbucks Project
 
 ### Introduction
-- This data set contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
+This is Udacity Data Scientist Nanodegree Capstone Project.  I will leverage what I learned from the program to build the Starbucks Challenge project.
 
-- Not all users receive the same offer, and that is the challenge to solve with this data set.
+I will follow the following steps of the data science process to finish this project.
 
-- Your task is to combine transaction, demographic and offer data to determine which demographic groups respond best to which offer type. This data set is a simplified version of the real Starbucks app because the underlying simulator only has one product whereas Starbucks actually sells dozens of products.
+1. Problem Statment. Define the program that I want to solve.
+2. Analyze the problem through the data exploration analysis, data visualizations.
+3. Model building, which includes data preprocessing, feature engineering, documentation on metrics, algorithms.
+4. Refinement. such as cross-validation, grid search.
+5. Results, which include the model evaluation and validation
+6. Conclusion.
 
-- Every offer has a validity period before the offer expires. As an example, a BOGO offer might be valid for only 5 days. You'll see in the data set that informational offers have a validity period even though these ads are merely providing information about a product; for example, if an informational offer has 7 days of validity, you can assume the customer is feeling the influence of the offer for 7 days after receiving the advertisement.
+### Problem Statement
+From the dataset, we know that people produce various events, including receiving offers, opening offers, and making purchases. There are no explicit products to track, only the amounts of each transaction or offer are recorded. And there are three types of offers that can be sent. Based on the procedure I mentioned above, I will conduct the analysis, build the machine learning model and find out the customer buying behaviors and how much are they going to spend on based on the offer type. 
 
-- You'll be given transactional data showing user purchases made on the app including the timestamp of purchase and the amount of money spent on a purchase. This transactional data also has a record for each offer that a user receives as well as a record for when a user actually views the offer. There are also records for when a user completes an offer.
+### Libraries
+pandas
+numpy
+json
+datetime
+matplotlib
+seaborn
+sklearn
 
-- Keep in mind as well that someone using the app might make a purchase through the app without having received an offer or seen an offer.
-
-### Example
-To give an example, a user could receive a discount offer buy 10 dollars get 2 off on Monday. The offer is valid for 10 days from receipt. If the customer accumulates at least 10 dollars in purchases during the validity period, the customer completes the offer.
-
-However, there are a few things to watch out for in this data set. Customers do not opt into the offers that they receive; in other words, a user can receive an offer, never actually view the offer, and still complete the offer. For example, a user might receive the "buy 10 dollars get 2 dollars off offer", but the user never opens the offer during the 10 day validity period. The customer spends 15 dollars during those ten days. There will be an offer completion record in the data set; however, the customer was not influenced by the offer because the customer never viewed the offer.
-
-### Cleaning
-This makes data cleaning especially important and tricky.
-
-You'll also want to take into account that some demographic groups will make purchases even if they don't receive an offer. From a business perspective, if a customer is going to make a 10 dollar purchase without an offer anyway, you wouldn't want to send a buy 10 dollars get 2 dollars off offer. You'll want to try to assess what a certain demographic group will buy when not receiving any offers.
-
-### Final Advice
-Because this is a capstone project, you are free to analyze the data any way you see fit. For example, you could build a machine learning model that predicts how much someone will spend based on demographics and offer type. Or you could build a model that predicts whether or not someone will respond to an offer. Or, you don't need to build a machine learning model at all. You could develop a set of heuristics that determine what offer you should send to each customer (i.e., 75 percent of women customers who were 35 years old responded to offer A vs 40 percent from the same demographic to offer B, so send offer A).
+### Files in the Repository
+- In Data folder: there are 3 dataset, for details, please check below. Pease note that transcript file is too large to upload into github.
+- In Main folder: there is the original code in ipynb and html formate.
 
 ### Data Sets
 The data is contained in three files:
@@ -58,3 +60,8 @@ Here is the schema and explanation of each variable in the files:
 - person (str) - customer id
 - time (int) - time in hours since start of test. The data begins at time t=0
 - value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+### Acknowledgements
+- Udacity provide the data, platform.
+- Project mentor Mrudula give me the tremendous help.
+- Project project reviewer provide me very detailed feedback with patient.
