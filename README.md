@@ -66,7 +66,7 @@ Here is the schema and explanation of each variable in the files:
 - New model (after refinement): accuracy 94.4%, F-score of 0.9391.
 The new model result is slightly better than the original model.
 
-### Acknowledgements
+### Acknowledgments
 - Udacity provide the data, platform.
 - Project mentor Mrudula give me the tremendous help.
 - Project project reviewer provide me very detailed feedback with patient.
